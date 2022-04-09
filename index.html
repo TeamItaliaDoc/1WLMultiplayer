@@ -1,0 +1,174 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="UTF-8"> 
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="0" />
+<script type="text/javascript" src="js/jquery-2.0.3.js"> </script>
+
+
+<script>
+    document.write('<script type="text/javascript"  src="js/torneo.js?dev=' + Math.floor(Math.random() * 100) + '"\><\/script>');
+    document.write('<script type="text/javascript"  src="js/giocatori.js?dev=' + Math.floor(Math.random() * 100) + '"\><\/script>');
+    document.write('<script type="text/javascript"  src="js/1WL.js?dev=' + Math.floor(Math.random() * 100) + '"\><\/script>');
+    document.write('<link rel="stylesheet" href="css/TID.css?dev=' + Math.floor(Math.random() * 100) + '"\><\/script>');
+</script>
+<!--
+<script>
+    document.write('<script type="text/javascript"  src="js/torneo.js"\><\/script>');
+    document.write('<script type="text/javascript"  src="js/giocatori.js"\><\/script>');
+    document.write('<script type="text/javascript"  src="js/1WL.js"\><\/script>');
+    document.write('<link rel="stylesheet" href="css/TID.css"\><\/script>');
+</script>
+-->
+
+</head>
+
+<!-- rilancio la pagina con un parametro per farla caricare se cambiata -->
+<script>
+    var query = window.location.search.substring(1);
+    if (!query)
+      window.location = 'index.html?dev=' + Math.floor(Math.random() * 100);
+    if (query == 'admin')
+    {
+        CAMPIONATO.isAdmin = true;
+    }   
+</script>
+    
+<body>
+    
+<!--                            INTESTAZIONE                                        -->   
+<main align=”center” class="frame-principale"> 
+<div class="intestazione-img">
+    <a href="https://www.chess.com/club/team-italia-doc"  target=”_blank”> <img height="125" width="125" src="img/TID.jpeg"></a>
+</div>
+<div>
+    <h1 class="intestazione-titolo">1WL - CLASSIC Championship</h1>
+    <br>
+    <h1 class="intestazione-piede">Stagione 2022</h1>
+    <HR>
+</div>
+
+<!--                            Menu                                        -->   
+<spam class="menu" >
+    <select  onchange="window.location=this.options[this.selectedIndex].value">
+        <option value="">Terminati...</option>
+        <option value="https://teamitaliadoc.github.io/CampionatoSocialeCategoria2020">Campionato categoria 2019</option>   
+        <option value="https://teamitaliadoc.github.io/battagliaFinale">Battaglia finale 2019</option>   
+        <option value="https://teamitaliadoc.github.io/Calvario2019">Calvario 2019</option>   
+        <option value="https://teamitaliadoc.github.io/campionatoSquadre2019">Campionato a squadre 2019</option>    
+        <option value="https://teamitaliadoc.github.io/Carosello2019">Carosello 2019</option>   
+        <option value="https://teamitaliadoc.github.io/campionatoSociale2019I">Campionato sociale 2019</option>    
+        <option value="https://teamitaliadoc.github.io/campionatoSociale2018">Campionato sociale 2018</option>    
+      </select>
+    </spam>
+    <spam class="menu" >
+    </spam>
+    <spam class="menu" >
+        <select  onchange="window.location=this.options[this.selectedIndex].value">
+            <option value="">In corso...</option>
+            <option value="https://teamitaliadoc.github.io/campionatoSquadre2021">Campionato a squadre 2021-22</option>    
+            <option value="https://teamitaliadoc.github.io/TrofeoPrimavera">Trofeo di Primavera</option>    
+        </select>
+    </spam>
+    <spam class="menu" >
+        <a  class="menu" href="https://teamitaliadoc.github.io/hallOfFame/index.html?d">Hall of fame </a>
+        <a  class="menuOk" href="https://teamitaliadoc.github.io/Team Match">Team Match</a>
+     </spam>
+     <spam class="menu" >
+        <select  onchange="window.location=this.options[this.selectedIndex].value">
+            <option value="">Video...</option>
+            <option value="https://youtu.be/xCvnI2K0VN8">Inno</option>    
+            <option value="https://www.youtube.com/watch?v=9rjMwIiODsw">Compleanno 2019</option>    
+          </select>
+        </spam>
+        <HR>     
+
+
+<!--                            1WL - OPEN A                                      -->   
+<table align="left" width="950px">
+    <tr> <td> <h1 class="intestazione-lega">1WL 2022 OPEN-A </h1> 
+</table>
+<table  id="A" class="classifica-giocatori">
+    <tr class="classifica-intestazione">
+        <td class="classifica-col2">Giocatore</td> 
+        <td class="classifica-col3">#1</td>
+        <td class="classifica-col3">#2</td>
+        <td class="classifica-col3">#3</td>
+        <td class="classifica-col3">#4</td>
+        <td class="classifica-col3">#5</td>
+        <td class="classifica-col3">#6</td>
+        <td class="classifica-col3">#7</td>
+        <td class="classifica-col3">#8</td>
+        <td class="classifica-col3">#9</td>
+       </td>
+    </tr>
+</table>
+
+<!--                            1WL - OPEN D5                                      -->   
+<table align="left" width="950px">
+    <tr> <td> <h1 class="intestazione-lega">1WL 2022 OPEN-D5 </h1> 
+</table>
+<table  id="D5" class="classifica-giocatori">
+    <tr class="classifica-intestazione">
+        <td class="classifica-col2">Giocatore</td> 
+        <td class="classifica-col3">#1</td>
+        <td class="classifica-col3">#2</td>
+        <td class="classifica-col3">#3</td>
+        <td class="classifica-col3">#4</td>
+        <td class="classifica-col3">#5</td>
+        <td class="classifica-col3">#6</td>
+        <td class="classifica-col3">#7</td>
+        <td class="classifica-col3">#8</td>
+        <td class="classifica-col3">#9</td>
+    </tr>
+</table>
+
+<!--                            Multiplayer no DOC                                      -->   
+<table align="left" width="950px">
+    <tr> <td> <h1 class="intestazione-lega">MULTIPLAYER </h1> 
+</table>
+<table  id="MULTIPLAYER" class="classifica-giocatori">
+    <tr class="classifica-intestazione">
+        <td class="classifica-col2">Giocatore</td> 
+        <td class="classifica-col3">#1</td>
+        <td class="classifica-col3">#2</td>
+        <td class="classifica-col3">#3</td>
+        <td class="classifica-col3">#4</td>
+        <td class="classifica-col3">#5</td>
+        <td class="classifica-col3">#6</td>
+        <td class="classifica-col3">#7</td>
+        <td class="classifica-col3">#8</td>
+        <td class="classifica-col3">#9</td>
+       </td>
+    </tr>
+</table>
+
+    
+
+         
+
+<!--                            IMMAGINE  -  LOGO   -->
+    <table  width="950px" height="50px" class="Powered">
+    <tr>
+        <td></td> 
+    </tr>
+</table>
+
+<table  width="950px"   class="Powered">
+
+    <tr>
+            <td align="left" width="950px">Realizzato da Sandro2116</td> 
+        </tr>
+    </table> 
+
+
+
+    <script type="text/javascript"> 
+        elabora();
+    </script>
+</main>
+
+</html>
+
