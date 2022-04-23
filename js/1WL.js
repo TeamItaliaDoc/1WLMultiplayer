@@ -2,7 +2,7 @@
 // OPEN-A
 matchs['WL-OPEN-A-1'] = {"id":"1346245", "lega":"A", "giornata":1, "data":"27/02/2022", "daCaricare" : true};
 matchs['WL-OPEN-A-2'] = {"id":"1357339", "lega":"A", "giornata":2, "data":"27/03/2022", "daCaricare" : true};
-matchs['WL-OPEN-A-3'] = {"id":"", "lega":"A", "giornata":3, "data":"24/04/2022", "daCaricare" : true};
+matchs['WL-OPEN-A-3'] = {"id":"1373551", "lega":"A", "giornata":3, "data":"24/04/2022", "daCaricare" : true};
 matchs['WL-OPEN-A-4'] = {"id":"", "lega":"A", "giornata":4, "data":"29/05/2022", "daCaricare" : true};
 matchs['WL-OPEN-A-5'] = {"id":"", "lega":"A", "giornata":5, "data":"26/06/2022", "daCaricare" : true};
 matchs['WL-OPEN-A-6'] = {"id":"", "lega":"A", "giornata":6, "data":"31/07/2022", "daCaricare" : true};
